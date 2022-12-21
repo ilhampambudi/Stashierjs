@@ -1,0 +1,30 @@
+POST http://localhost:5000/register
+Content-Type: application/json
+
+{
+    "name": "admintest",
+    "email": "admintest@gmail.com",
+    "password": "123456",
+}
+
+###
+// get All Users
+GET http://localhost:5000/users
+
+###
+GET http://localhost:5000/users/8278c9f8-d53e-43f0-82da-f313345119bd
+
+###
+PATCH http://localhost:5000/users/8278c9f8-d53e-43f0-82da-f313345119bd
+Content-Type: application/json
+
+{
+    "name": "admintestupdate",
+    "email": "admintest@gmail.com",
+    "password": "",
+    "confPassword": "",
+    "role": "admin"
+}
+
+###
+GET http://localhost:5000/products
